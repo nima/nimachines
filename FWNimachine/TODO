@@ -1,0 +1,4 @@
+ * Psy|: what'd be cool would be to have it work through an NSPort, or you could
+   create your own CFRunLoopSource.  If you can receive messages via callbacks
+   from your sensors you could create a CFRunLoopSource that would trigger
+   reading the data.

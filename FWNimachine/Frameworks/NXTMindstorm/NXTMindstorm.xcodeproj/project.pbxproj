@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C1EE15310F2201400C0E810 /* NXTMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1EE15110F2201400C0E810 /* NXTMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C4192F710EF08C4005B0857 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4192F610EF08C4005B0857 /* Cocoa.framework */; };
+		3C5C036210F23D5B009D8CA2 /* NXTMessageInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5C036010F23D5B009D8CA2 /* NXTMessageInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C5C036310F23D5B009D8CA2 /* NXTMessageInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5C036110F23D5B009D8CA2 /* NXTMessageInit.m */; };
+		3C675D1110EF824C0061B996 /* NSMutableQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C675D0F10EF824C0061B996 /* NSMutableQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C675D1210EF824C0061B996 /* NSMutableQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C675D1010EF824C0061B996 /* NSMutableQueue.m */; };
+		3C7FE63D10F33760002ADC64 /* NXTSensorSound.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7FE63B10F33760002ADC64 /* NXTSensorSound.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C7FE63E10F33760002ADC64 /* NXTSensorSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7FE63C10F33760002ADC64 /* NXTSensorSound.m */; };
+		3C882A9C10F0E5CD0088F6F3 /* codes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C882A9B10F0E5CD0088F6F3 /* codes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9ADB9610E72D3800E782FF /* NXTMindstorm.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9ADB8A10E72D3800E782FF /* NXTMindstorm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9ADB9710E72D3800E782FF /* NXTMindstorm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ADB8B10E72D3800E782FF /* NXTMindstorm.m */; };
+		3C9ADB9A10E72D3800E782FF /* NXTState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9ADB8E10E72D3800E782FF /* NXTState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9ADB9B10E72D3800E782FF /* NXTState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ADB8F10E72D3800E782FF /* NXTState.m */; };
+		3C9ADB9C10E72D3800E782FF /* NXTAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9ADB9010E72D3800E782FF /* NXTAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9ADB9D10E72D3800E782FF /* NXTAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ADB9110E72D3800E782FF /* NXTAction.m */; };
+		3C9ADB9E10E72D3800E782FF /* NXTSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9ADB9210E72D3800E782FF /* NXTSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9ADB9F10E72D3800E782FF /* NXTSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ADB9310E72D3800E782FF /* NXTSensor.m */; };
+		3C9ADBA010E72D3800E782FF /* NXTActuator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9ADB9410E72D3800E782FF /* NXTActuator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9ADBA110E72D3800E782FF /* NXTActuator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ADB9510E72D3800E782FF /* NXTActuator.m */; };
+		3C9ADBC210E72E8100E782FF /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9ADBC110E72E8100E782FF /* IOBluetooth.framework */; };
+		3C9ADBC410E72E8100E782FF /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9ADBC310E72E8100E782FF /* IOBluetoothUI.framework */; };
+		3CDE27F910F078E900E559F4 /* NXTSensorLight.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CDE27F710F078E900E559F4 /* NXTSensorLight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CDE27FA10F078E900E559F4 /* NXTSensorLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE27F810F078E900E559F4 /* NXTSensorLight.m */; };
+		3CFB4D4210F357F100437DEF /* NXTSensors.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB4D4110F357F100437DEF /* NXTSensors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB4D9A10F35A6D00437DEF /* NXTSensorGyroscope.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB4D9610F35A6D00437DEF /* NXTSensorGyroscope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB4D9B10F35A6D00437DEF /* NXTSensorGyroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB4D9710F35A6D00437DEF /* NXTSensorGyroscope.m */; };
+		3CFB4D9C10F35A6D00437DEF /* NXTSensorTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB4D9810F35A6D00437DEF /* NXTSensorTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB4D9D10F35A6D00437DEF /* NXTSensorTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB4D9910F35A6D00437DEF /* NXTSensorTouch.m */; };
+		3CFB4E3010F36C2800437DEF /* NXTSensorAccelerometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB4E2E10F36C2800437DEF /* NXTSensorAccelerometer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB4E3110F36C2800437DEF /* NXTSensorAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB4E2F10F36C2800437DEF /* NXTSensorAccelerometer.m */; };
+		3CFB4E7D10F37D2C00437DEF /* NXTSensorCompass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB4E7B10F37D2C00437DEF /* NXTSensorCompass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB4E7E10F37D2C00437DEF /* NXTSensorCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB4E7C10F37D2C00437DEF /* NXTSensorCompass.m */; };
+		3CFB503F10F3917000437DEF /* NXTSensorColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB503D10F3917000437DEF /* NXTSensorColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB504010F3917000437DEF /* NXTSensorColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB503E10F3917000437DEF /* NXTSensorColor.m */; };
+		3CFB505C10F3940400437DEF /* NXTSensorUltrasonic.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFB505A10F3940400437DEF /* NXTSensorUltrasonic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFB505D10F3940400437DEF /* NXTSensorUltrasonic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB505B10F3940400437DEF /* NXTSensorUltrasonic.m */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* NXTMindstorm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTMindstorm_Prefix.pch; sourceTree = "<group>"; };
+		3C1EE15110F2201400C0E810 /* NXTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTMessage.h; sourceTree = "<group>"; };
+		3C4192F610EF08C4005B0857 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		3C5C036010F23D5B009D8CA2 /* NXTMessageInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTMessageInit.h; sourceTree = "<group>"; };
+		3C5C036110F23D5B009D8CA2 /* NXTMessageInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTMessageInit.m; sourceTree = "<group>"; };
+		3C675D0F10EF824C0061B996 /* NSMutableQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableQueue.h; sourceTree = "<group>"; };
+		3C675D1010EF824C0061B996 /* NSMutableQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableQueue.m; sourceTree = "<group>"; };
+		3C6C044610E7374800BB15DB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3C7FE63B10F33760002ADC64 /* NXTSensorSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorSound.h; sourceTree = "<group>"; };
+		3C7FE63C10F33760002ADC64 /* NXTSensorSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorSound.m; sourceTree = "<group>"; };
+		3C882A9B10F0E5CD0088F6F3 /* codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codes.h; sourceTree = "<group>"; };
+		3C9ADB8A10E72D3800E782FF /* NXTMindstorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTMindstorm.h; sourceTree = "<group>"; };
+		3C9ADB8B10E72D3800E782FF /* NXTMindstorm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTMindstorm.m; sourceTree = "<group>"; };
+		3C9ADB8E10E72D3800E782FF /* NXTState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTState.h; sourceTree = "<group>"; };
+		3C9ADB8F10E72D3800E782FF /* NXTState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTState.m; sourceTree = "<group>"; };
+		3C9ADB9010E72D3800E782FF /* NXTAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTAction.h; sourceTree = "<group>"; };
+		3C9ADB9110E72D3800E782FF /* NXTAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTAction.m; sourceTree = "<group>"; };
+		3C9ADB9210E72D3800E782FF /* NXTSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensor.h; sourceTree = "<group>"; };
+		3C9ADB9310E72D3800E782FF /* NXTSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensor.m; sourceTree = "<group>"; };
+		3C9ADB9410E72D3800E782FF /* NXTActuator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTActuator.h; sourceTree = "<group>"; };
+		3C9ADB9510E72D3800E782FF /* NXTActuator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTActuator.m; sourceTree = "<group>"; };
+		3C9ADBC110E72E8100E782FF /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		3C9ADBC310E72E8100E782FF /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		3CDE27F710F078E900E559F4 /* NXTSensorLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorLight.h; sourceTree = "<group>"; };
+		3CDE27F810F078E900E559F4 /* NXTSensorLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorLight.m; sourceTree = "<group>"; };
+		3CFB4D4110F357F100437DEF /* NXTSensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensors.h; sourceTree = "<group>"; };
+		3CFB4D9610F35A6D00437DEF /* NXTSensorGyroscope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorGyroscope.h; sourceTree = "<group>"; };
+		3CFB4D9710F35A6D00437DEF /* NXTSensorGyroscope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorGyroscope.m; sourceTree = "<group>"; };
+		3CFB4D9810F35A6D00437DEF /* NXTSensorTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorTouch.h; sourceTree = "<group>"; };
+		3CFB4D9910F35A6D00437DEF /* NXTSensorTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorTouch.m; sourceTree = "<group>"; };
+		3CFB4E2E10F36C2800437DEF /* NXTSensorAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorAccelerometer.h; sourceTree = "<group>"; };
+		3CFB4E2F10F36C2800437DEF /* NXTSensorAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorAccelerometer.m; sourceTree = "<group>"; };
+		3CFB4E7B10F37D2C00437DEF /* NXTSensorCompass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorCompass.h; sourceTree = "<group>"; };
+		3CFB4E7C10F37D2C00437DEF /* NXTSensorCompass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorCompass.m; sourceTree = "<group>"; };
+		3CFB503D10F3917000437DEF /* NXTSensorColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorColor.h; sourceTree = "<group>"; };
+		3CFB503E10F3917000437DEF /* NXTSensorColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorColor.m; sourceTree = "<group>"; };
+		3CFB505A10F3940400437DEF /* NXTSensorUltrasonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXTSensorUltrasonic.h; sourceTree = "<group>"; };
+		3CFB505B10F3940400437DEF /* NXTSensorUltrasonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXTSensorUltrasonic.m; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* NXTMindstorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NXTMindstorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9ADBC210E72E8100E782FF /* IOBluetooth.framework in Frameworks */,
+				3C9ADBC410E72E8100E782FF /* IOBluetoothUI.framework in Frameworks */,
+				3C4192F710EF08C4005B0857 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* NXTMindstorm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* MindstormNXT */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = MindstormNXT;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C882A9B10F0E5CD0088F6F3 /* codes.h */,
+				3C675D0F10EF824C0061B996 /* NSMutableQueue.h */,
+				3C675D1010EF824C0061B996 /* NSMutableQueue.m */,
+				3C9ADB8A10E72D3800E782FF /* NXTMindstorm.h */,
+				3C9ADB8B10E72D3800E782FF /* NXTMindstorm.m */,
+				3CFB4CA710F34A8600437DEF /* Messaging */,
+				3CFB4C8610F3481C00437DEF /* Sensors */,
+				3C9ADB9410E72D3800E782FF /* NXTActuator.h */,
+				3C9ADB9510E72D3800E782FF /* NXTActuator.m */,
+				3C9ADB8E10E72D3800E782FF /* NXTState.h */,
+				3C9ADB8F10E72D3800E782FF /* NXTState.m */,
+				3C9ADB9010E72D3800E782FF /* NXTAction.h */,
+				3C9ADB9110E72D3800E782FF /* NXTAction.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C4192F610EF08C4005B0857 /* Cocoa.framework */,
+				3C6C044610E7374800BB15DB /* CoreFoundation.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9ADBC110E72E8100E782FF /* IOBluetooth.framework */,
+				3C9ADBC310E72E8100E782FF /* IOBluetoothUI.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* NXTMindstorm_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		3CFB4C8610F3481C00437DEF /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB4D4110F357F100437DEF /* NXTSensors.h */,
+				3C9ADB9210E72D3800E782FF /* NXTSensor.h */,
+				3C9ADB9310E72D3800E782FF /* NXTSensor.m */,
+				3CDE27F710F078E900E559F4 /* NXTSensorLight.h */,
+				3CDE27F810F078E900E559F4 /* NXTSensorLight.m */,
+				3C7FE63B10F33760002ADC64 /* NXTSensorSound.h */,
+				3C7FE63C10F33760002ADC64 /* NXTSensorSound.m */,
+				3CFB4D9610F35A6D00437DEF /* NXTSensorGyroscope.h */,
+				3CFB4D9710F35A6D00437DEF /* NXTSensorGyroscope.m */,
+				3CFB4D9810F35A6D00437DEF /* NXTSensorTouch.h */,
+				3CFB4D9910F35A6D00437DEF /* NXTSensorTouch.m */,
+				3CFB4E2E10F36C2800437DEF /* NXTSensorAccelerometer.h */,
+				3CFB4E2F10F36C2800437DEF /* NXTSensorAccelerometer.m */,
+				3CFB4E7B10F37D2C00437DEF /* NXTSensorCompass.h */,
+				3CFB4E7C10F37D2C00437DEF /* NXTSensorCompass.m */,
+				3CFB503D10F3917000437DEF /* NXTSensorColor.h */,
+				3CFB503E10F3917000437DEF /* NXTSensorColor.m */,
+				3CFB505A10F3940400437DEF /* NXTSensorUltrasonic.h */,
+				3CFB505B10F3940400437DEF /* NXTSensorUltrasonic.m */,
+			);
+			name = Sensors;
+			sourceTree = "<group>";
+		};
+		3CFB4CA710F34A8600437DEF /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				3C1EE15110F2201400C0E810 /* NXTMessage.h */,
+				3C5C036010F23D5B009D8CA2 /* NXTMessageInit.h */,
+				3C5C036110F23D5B009D8CA2 /* NXTMessageInit.m */,
+			);
+			name = Messaging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9ADB9610E72D3800E782FF /* NXTMindstorm.h in Headers */,
+				3C9ADB9A10E72D3800E782FF /* NXTState.h in Headers */,
+				3C9ADB9C10E72D3800E782FF /* NXTAction.h in Headers */,
+				3C9ADB9E10E72D3800E782FF /* NXTSensor.h in Headers */,
+				3C9ADBA010E72D3800E782FF /* NXTActuator.h in Headers */,
+				3C675D1110EF824C0061B996 /* NSMutableQueue.h in Headers */,
+				3CDE27F910F078E900E559F4 /* NXTSensorLight.h in Headers */,
+				3C882A9C10F0E5CD0088F6F3 /* codes.h in Headers */,
+				3C1EE15310F2201400C0E810 /* NXTMessage.h in Headers */,
+				3C5C036210F23D5B009D8CA2 /* NXTMessageInit.h in Headers */,
+				3C7FE63D10F33760002ADC64 /* NXTSensorSound.h in Headers */,
+				3CFB4D4210F357F100437DEF /* NXTSensors.h in Headers */,
+				3CFB4D9A10F35A6D00437DEF /* NXTSensorGyroscope.h in Headers */,
+				3CFB4D9C10F35A6D00437DEF /* NXTSensorTouch.h in Headers */,
+				3CFB4E3010F36C2800437DEF /* NXTSensorAccelerometer.h in Headers */,
+				3CFB4E7D10F37D2C00437DEF /* NXTSensorCompass.h in Headers */,
+				3CFB503F10F3917000437DEF /* NXTSensorColor.h in Headers */,
+				3CFB505C10F3940400437DEF /* NXTSensorUltrasonic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* NXTMindstorm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "NXTMindstorm" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NXTMindstorm;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = MindstormNXT;
+			productReference = 8DC2EF5B0486A6940098B216 /* NXTMindstorm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Autonomy Corporation Pty Lts";
+			};
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "NXTMindstorm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* MindstormNXT */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* NXTMindstorm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9ADB9710E72D3800E782FF /* NXTMindstorm.m in Sources */,
+				3C9ADB9B10E72D3800E782FF /* NXTState.m in Sources */,
+				3C9ADB9D10E72D3800E782FF /* NXTAction.m in Sources */,
+				3C9ADB9F10E72D3800E782FF /* NXTSensor.m in Sources */,
+				3C9ADBA110E72D3800E782FF /* NXTActuator.m in Sources */,
+				3C675D1210EF824C0061B996 /* NSMutableQueue.m in Sources */,
+				3CDE27FA10F078E900E559F4 /* NXTSensorLight.m in Sources */,
+				3C5C036310F23D5B009D8CA2 /* NXTMessageInit.m in Sources */,
+				3C7FE63E10F33760002ADC64 /* NXTSensorSound.m in Sources */,
+				3CFB4D9B10F35A6D00437DEF /* NXTSensorGyroscope.m in Sources */,
+				3CFB4D9D10F35A6D00437DEF /* NXTSensorTouch.m in Sources */,
+				3CFB4E3110F36C2800437DEF /* NXTSensorAccelerometer.m in Sources */,
+				3CFB4E7E10F37D2C00437DEF /* NXTSensorCompass.m in Sources */,
+				3CFB504010F3917000437DEF /* NXTSensorColor.m in Sources */,
+				3CFB505D10F3940400437DEF /* NXTSensorUltrasonic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_OPENMP_SUPPORT = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NXTMindstorm_Prefix.pch;
+				GENERATE_PROFILING_CODE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = NXTMindstorm;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NXTMindstorm_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Library/Frameworks;
+				PRODUCT_NAME = NXTMindstorm;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "NXTMindstorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "NXTMindstorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
