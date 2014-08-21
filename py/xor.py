@@ -9,8 +9,7 @@ random.seed(time.time())
 
 #. Create the Neural Network machine
 from nimachines.nn import NeuralNetwork
-from nimachines.transfer import sigmoid as t
-nn = NeuralNetwork('xor', [2,8,1], t)
+nn = NeuralNetwork('xor', [2,8,1])
 #nn.draw()
 
 #. Commence Training...

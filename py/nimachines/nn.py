@@ -2,6 +2,7 @@ from . import *
 from .link import Link
 from .node import Node
 from .layer import Layer
+from .transfer import *
 import pickle, os
 
 '''
@@ -13,7 +14,7 @@ hidden neurons; act as feature detectors
 
 class NeuralNetwork:
     trained = 0
-    def __init__(self, datafile, topology, transfer_fn):
+    def __init__(self, datafile, topology, transfer='sigmoid'):
 
         self._datafile = "%s.nn" % datafile
         if (os.path.exists(self._datafile)):
@@ -22,6 +23,7 @@ class NeuralNetwork:
                 data = pickle.load(fH)
 
             Node.phi              = data.phi
+            Node.d_phi            = data.d_phi
             NeuralNetwork.trained = data.trained
 
             self._input_layer  = data._input_layer
@@ -31,7 +33,11 @@ class NeuralNetwork:
             self._output_layer = data.self._output_layer
 
         else:
-            Node.phi = transfer_fn
+            if transfer == 'sigmoid':
+                Node.phi   = sigmoid
+                Node.d_phi = d_sigmoid
+            else:
+                raise(None)
 
             #. The input layer...
             self._input_layer = Layer(topology[0])

@@ -16,26 +16,29 @@ class Node(object):
         ABSTRACT
 
     def set_error(self):
-        o = self.get_output()
         t = self.get_target()
+        o = self.get_output()
+        dt = None
         if t is False: #. Hidden Layers (No official target)...
             #. As we can't calculate dt, we will estimate it, start by setting it to zero...
-            dt = 0.00
             #. This time we have no target so we have to do something else...
+            dt = 0.00
             for l in self.get_links():
-                w1 = l.get_weight()
                 #. Estimate the the error by borrowing it from the link's child node...
                 e = l.get_child().get_error()
+
                 #. Adjust the weight using this error...
-                w2 = w1 + 1.0 * e * o
-                l.set_weight(w2)
+                w  = l.get_weight()
+                w += 1.0 * e * o
+                l.set_weight(w)
+
                 #. Add the weighted error to dt for each link...
-                dt += 1.0 * w2 * e
-            self._error = dt*(1 - o)*o
+                dt += 1.0 * w * e
+
         else: #. Output Nodes...
             dt = t - o
-            e = dt * (1 - o) * o
-            self._error = e
+
+        self._error = dt * Node.d_phi(o)
 
     def set_target(self, value):
         self._target = float(value)
@@ -85,21 +88,24 @@ class Neuron(Node):
         '''
         Bias nodes return a signal of 1.00
 
-            y = 1.00
+            o = 1.00
 
         Other nodes return a signal that is equal to:
 
-            y = phi(sum(w1x1, w2x2, ..., wNxN))
+            o = phi(sum(w1x1, w2x2, ..., wNxN))
+
         '''
-        y = 1.00
+        o = 1.00
+
         if not self._is_bias:
-            y *= Node.phi(
-                sum(
-                    [ l.get_weighted_input() for l in self.parents.values() ]
-                )
+            o = Node.phi(
+                sum(map(
+                    lambda l:l.get_weight() * l.get_input(),
+                    self.parents.values()
+                ))
             )
 
-        return y
+        return o
 
     def mk_bias(self):
         self._is_bias = True

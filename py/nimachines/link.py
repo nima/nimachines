@@ -36,5 +36,10 @@ class Link:
     def get_weight(self):
         return self._weight
 
-    def get_weighted_input(self):
-        return self._parent.get_output() * self._weight
+    def get_input(self):
+        '''Input to this link is the output of the parent node'''
+        return self._parent.get_output()
+
+    def get_error(self):
+        '''Error is the child node's error'''
+        return self._child.get_error()
