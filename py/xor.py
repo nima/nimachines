@@ -24,18 +24,18 @@ training = [
 ]
 
 #. XOR Training
-threshold = 0.00000001
-mse = 1
-while mse > threshold:
-    mse = sum(
-        [pow(e[0], 2) for e in map(lambda d:nn.train(*d), training)]
+threshold = 0.001
+e = 1
+while e >= threshold:
+    e = sum(
+        [abs(e[0]) for e in map(lambda d:nn.train(*d), training)]
     ) / len(training)
-    if(nn.trained % 500 == 0):
+    if(nn.trained % 500 == 0 or e < threshold):
         print("%s; e:%9.8f, i:%ld" % (
             list(zip(
                 [d[0] for d in training],
                 [('%2.3f' % e[0]) for e in map(lambda d:nn.test(d[0]), training)]
-            )), mse, nn.trained
+            )), e, nn.trained
         ))
 
 print('#'*80)
